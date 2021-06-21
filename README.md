@@ -46,5 +46,5 @@ CREATE TABLE IF NOT EXISTS Genres (
 
 ALTER TABLE Artists ADD COLUMN GenreId INTEGER NOT NULL REFERENCES Genres 
 ```
-[Скачать файл с кодом](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db_code.txt "create_db_code.txt")
+[Ссылка на файл с кодом](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db_code.txt "create_db_code.txt")
 ____   
