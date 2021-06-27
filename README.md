@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS CollectionsTracks (
 
 [Ссылка на файл с кодом](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db_code_updated.txt "create_db_code_updated.txt")
 ____ 
-## Решение домашнего задания к лекции «Select-запросы, выборки из одной таблицы»
+## Решение домашнего задания к лекции «SELECT-запросы, выборки из одной таблицы»
   
 ### Создание БД и таблиц:
 Ссылка на файл: [create_db.py](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db.py "create_db.py")
