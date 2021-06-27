@@ -108,5 +108,5 @@ CREATE TABLE IF NOT EXISTS CollectionsTracks (
 );
 ```
 
-[Ссылка на файл с кодом](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db_code.txt "create_db_code_updated.txt")
+[Ссылка на файл с кодом](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db_code_updated.txt "create_db_code_updated.txt")
 ____ 
