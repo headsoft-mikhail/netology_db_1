@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS AlbumsArtists (
 CREATE TABLE IF NOT EXISTS Tracks (
 	AlbumId INTEGER REFERENCES Albums,
 	Name VARCHAR(80) NOT NULL,
-	Continuity INTEGER NOT NULL CHECK (Continuity > 0)
+	Continuity INTEGER NOT NULL CHECK (Continuity > 0),
 	constraint pk_Tracks PRIMARY KEY (Name, AlbumId)
 );
 
