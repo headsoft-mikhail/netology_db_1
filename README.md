@@ -92,7 +92,8 @@ CREATE TABLE IF NOT EXISTS Tracks (
 	Id SERIAL PRIMARY KEY,
 	AlbumId INTEGER REFERENCES Albums,
 	Name VARCHAR(80) NOT NULL,
-	Continuity INTEGER NOT NULL CHECK (Continuity > 0)
+	Continuity INTEGER NOT NULL CHECK (Continuity > 0),
+	constraint pk_Tracks UNIQUE (Name, AlbumId)
 );
 
 CREATE TABLE IF NOT EXISTS Collections (	
