@@ -111,3 +111,32 @@ CREATE TABLE IF NOT EXISTS CollectionsTracks (
 
 [Ссылка на файл с кодом](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db_code_updated.txt "create_db_code_updated.txt")
 ____ 
+## Решение домашнего задания к лекции «Select-запросы, выборки из одной таблицы»
+  
+### Создание БД и таблиц:
+Ссылка на файл: [create_db.py](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db.py "create_db.py")
+1. При запуске программа пытается подключиться к БД "music", если такой не существует, тогда подключается к БД "postgres", которая должна существовать по умолчанию, и из этого состояния создаёт БД "music"
+1. Команды для создания таблиц и столбцов программа берет прямо из этого репозитория на github из решения ДЗ ([текстового файла](https://github.com/headsoft-mikhail/netology_db_1/blob/main/create_db_code_updated.txt "create_db_code_updated.txt")) для предыдущей лекции (не выполняются первые 2 команды, т.к. они нужны при работе из командной строки)
+### Заполнение БД данными:
+Ссылка на файл: [fill_db.py](https://github.com/headsoft-mikhail/netology_db_1/blob/main/fill_db.py "fill_db.py")
+1. Данные для заполнения загружаются из структуры вида:
+```python
+data = [
+    {'artist': artist_name,
+     'genres': [genre],
+     'albums': [{'album': album_name,
+                 'year': year,
+                 'tracks': [{'track': track_name, 'continuity': continuity_sec},
+		 	     ...
+                            ]
+                 }
+		 ...
+		]
+     },
+     ...] 
+```
+1. Для заполнения коллекций, с помощью запроса получаю все id треков и случайным образом выбираю от 5 до 15 треков для новой коллекции.
+1. Годы выпуска и названия коллекций заполняются с помощью инкремента. Можно Создавать колекции с помощью SELECT-запросов с фильтрацией по исполнителю или жанру, но этого в задании не было, поэтому коллекции заполняются случайными треками.
+### SELECT-запросы согласно инструкциям:
+Ссылка на файл: [select_from_db.py](https://github.com/headsoft-mikhail/netology_db_1/blob/main/select_from_db.py "select_from_db.py")
+____ 
