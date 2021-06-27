@@ -45,6 +45,6 @@ CREATE TABLE IF NOT EXISTS Collections (
 
 CREATE TABLE IF NOT EXISTS CollectionsTracks (
 	CollectionId INTEGER REFERENCES Collections,
-	TrackId INTEGER REFERENCES pk_Tracks,
+	TrackId INTEGER REFERENCES Tracks(pk_Tracks),
 	constraint pk_CollectionsTracks PRIMARY KEY (CollectionId, TrackId)
 );
