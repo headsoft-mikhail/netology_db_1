@@ -45,3 +45,5 @@ print(f'Tracks containing {string_to_find}:')
 tracks_with_string = db.execute(f"""SELECT name FROM Tracks WHERE name LIKE '%%{string_to_find}%%'""").fetchall()
 for track in tracks_with_string:
     print(track[0])
+    
+db.close()
